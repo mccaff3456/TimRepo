@@ -4,7 +4,7 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="W3_grid.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -12,6 +12,28 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 </style>
+<style>
+  .container {
+    position: left;
+    font-family: Arial;
+  }
+  
+  .text-block {
+    position: right;
+    bottom: 0px;
+    right: 20px;
+    background-color: black;
+    color: rgb(231, 17, 17);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+  </style>
 </head>
 <body>
 
@@ -28,11 +50,16 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </div>
 
+<!-- Links to HELP Reference (Tim)
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block
+  https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h
+ -->
+
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="./images/extreme_skiing.jpg" alt="Beerskis Travel" width="1600" height="800">
+  <img class="w3-image" src="./images/extreme_skiing.jpg" alt="Beerskis Travel" width="1400" height="700">
   <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Beerskis Travel</h1>
+    <h1 class="w3-xxlarge">Le Catering</h1>
   </div>
 </header>
 
@@ -40,11 +67,12 @@ h1, h2, h3, h4, h5, h6 {
 <div class="w3-content" style="max-width:1100px">
 
   <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="./images/seven_springs.jpg" class="w3-round w3-image w3-opacity-min" alt="Resorts" width="600" height="750">
-    </div>
-
+  <div class="w3-display-container w3-col m6 w3-padding-large w3-hide-small" style="background-color: blue;">
+    <img src="./images/extreme_skiing.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" 					width="600" height="750">
+<h1 class = "w3-xxlarge w3-display-bottomleft w3-padding-large" >Le Catering</h1>
+</div>
+        <!-- <h1 class="w3-col m6 w3-opacity-min w3-xlarge">7 Springs</h1> -->
+     
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">About Ski Travel</h1><br>
       <h5 class="w3-center">Tradition since 1992</h5>
