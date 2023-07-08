@@ -2,38 +2,290 @@
 <html>
 <head>
 <title>Page Title</title>
-</head>
 <style>
-h1 {font-size: 30px;}
-h2 {font-size: 25px;}
- p {font-size: 12px;}
+    h1 {font-size: 30px;
+    text-align: center;}
+    h2 {font-size: 25px;
+    text-align: center;
+    }
+    p {font-size: 14px;}
+    p#myP {visibility:visible;
+      color: red;
+    }
+    table, th, td {
+  border:1px solid black;
+  font-size: 20px;
+}
+.button-group {
+      display:flex;
+      margin-left: 200px;
+           
+    }
 
-</style>
+    button {
+      align-items: center;
+      background-color: greenyellow;
+      color:blue;
+      font-size: 20px;
+     
+    }
+  #summary1 {
+    width:100%;
+    margin-left: 100px;
+    padding-top:20px;
+    font-size:20px;
+    
+    </style>
+</head>
+
 <body>
 
 <h1>Tim McCaffery</h1>
-<h2>Technical Manager<h2>
-<p>
-<br>● Technical Project Leader skill set with the knowledge, experience, and competence to provide
-excellent value and productivity.
-<br>● Multiple positions performed successfully over the last 20 years include SharePoint
-Architect/Developer, Senior Systems Analyst, IT Engineer, STEM Instructor, Youth Coach,
-Program Manager, Modeling/Simulation Engineer.
-<br>● DISA Program of the Year Award for development of a Full Stack Network Analysis Application
-implemented for years automating the collection, processing and briefing of NIPR/SIPR military Network
-Metrics to top Military communications personnel.
-<br>● Solution-oriented, results-driven work ethic. Self-learning and self-starter.
-<br>● Extensive experience adapting systems engineering principles across a wide variety of
-industry domains.
-<br>● Proven ability to integrate solutions among disparate stakeholder groups. Develop and tailor
-lifecycle approaches to achieve technology and business objectives.
-<br>● Employ simulation and data analysis to predict potential outcomes, design strategies
-accordingly, and facilitate effective decision making.
-<br>● Providing efficient development and operation of systems in order to achieve targeted goals.
-<br>● Facilitate effective communication and collaboration across diverse functional teams with
-common systems objectives.
-<br>● Volunteer: 30 years youth sports coaching, 10 years volunteering at KEEN (kids with disabilities).
-</p>
+<h2 id="h2a">IT Manager /   Project Leader /  Systems Analyst /  Engineer / STEM</h2>
+<div class="button-group"></div>
+<button onclick="mySummary()">Summary</button>
+<button onclick="techSkills()">Technical Skills</button>
+<button onclick="mySoftSkills()">Soft Skills</button>
+<button onclick="myHist()">Work History</button>
+<button onclick="Agencies()">Agencies Supported</button>
+<button onclick="toggle()">Toggle</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+</div>
 
+<div id="summary1"></div>
+<p id="demo"></p>
+
+  <ul hidden id="mySumm">
+    <li> mySumm Technical Project Leader skill set with the knowledge, experience, and competence to provide
+  excellent value and productivity.</li>
+    <li>Multiple positions performed successfully over the last 20 years include SharePoint
+  Architect/Developer, Senior Systems Analyst, IT Engineer, STEM Instructor, Youth Coach,
+  Program Manager, Modeling/Simulation Engineer.</li>
+    <li>DISA Program of the Year Award for development of a Full Stack Network Analysis Application
+  implemented for years automating the collection, processing and briefing of NIPR/SIPR military Network
+  Metrics to top Military communications personnel.</li>
+    <li>Solution-oriented, results-driven work ethic. Self-learning and self-starter.</li>
+    <li>Extensive experience adapting systems engineering principles across a wide variety of
+  industry domains.</li>
+    <li>Proven ability to integrate solutions among disparate stakeholder groups. Develop and tailor
+  lifecycle approaches to achieve technology and business objectives.</li>
+    <li>Employ simulation and data analysis to predict potential outcomes, design strategies
+  accordingly, and facilitate effective decision making.</li>
+    <li>Providing efficient development and operation of systems in order to achieve targeted goals.</li>
+    <li>Facilitate effective communication and collaboration across diverse functional teams with
+  common systems objectives.</li>
+    <li>Volunteer: 30 years youth sports coaching, 10 years volunteering at KEEN (kids with disabilities).</li>
+</ul>
+
+<ul hidden id="techSkills">
+  <li>SharePoint Design / Development</li>
+  <li>Agile Methodology Implementation</li>
+  <li>Scrum, Kaban, Lean Six Sigma, Agile</li>
+  <li>Program Management -PMP Certified</li>
+  <li>Systems Analyst Military Joint Programs</li>
+  <li>MS 365 Office Expert</li>
+  <li>Communications Engineer</li>
+  <li>.NET Programming</li>
+  <li>Modeling & Simulation Development</li>
+  <li>HTML, CSS, Javascript, SQL</li>
+  <li>Full Stack Software Development</li>
+  <li>Military Hospital Coding</li>
+  <li>Satellite Communications (DAMA)</li>
+  <li>Time Management / Optimization</li>
+  <li>STEM Instructor / Programming Instructor</li>
+</ul>
+<ul hidden id="mySoftSkills">
+    <li>Integrity / Trustworthiness</li>
+    <li>Leadership / Mentoring / Coaching</li>
+    <li>Excellent Educator</li>
+    <li>Strong interpersonal skills</li>
+    <li>Ability to work independently</li>
+    <li>Self-motivated with innovative ideas</li>
+    <li>Understanding Technology & People</li>
+    <li>Energetic / Competent</li>
+    <li>Insatiable Appetite For Learning</li>
+    <li>Effective Communicator</li>
+    <li>Flexibility</li>
+    <li>Analytical thinking (Outside the Box)</li>
+    <li>Innovation in Automation</li>
+    <li>Thirst for Knowledge</li>
+    <li>Dependability / Reliability / Punctuality</li>
+    <li>Purpose / Patience / Passion</li>
+</ul>
+
+ <div hidden id="myHist">
+<table >
+<tr>
+  <th>Company</th>    
+  <th>Job Title</th>
+  <th>Duration</th>
+</tr>
+  <td>BA Academy</td>
+  <td>STEM/Programming Instructor</td>
+  <td>7 years</td>
+<tr>
+  <td>TSymmetry</td>
+  <td>Senior SharePoint Architect</td>
+  <td>1 year</td> 
+</tr>
+<tr>
+  <td>Twin-Soft</td>
+  <td>Senior SharePoint Architect</td>
+  <td>1 year</td> 
+</tr>
+<tr>
+  <td>Ingenium</td>
+  <td>Senior SharePoint Architect</td>
+  <td>1 year</td>
+</tr>
+ <tr>
+  <td>SAIC, McLean, VA</td>
+  <td>
+    <ul>
+      <li>Senior SharePoint Architect</li>
+      <li>.NET Developer</li>
+      <li>SharePoint Site Developer Network Analyst</li>
+      <li>Network Comms Analyst, Developer, and Task Leader</li>
+      <li>Modeling/Simulation Team Leader</li>
+      <li>Tactical Communications/Modeling Engineer</li>
+      <li>Modeling/Simulation Developer</li>
+      <li>Satellite Communications Analyst</li>
+    </ul>
+  </td>
+  <td>9 years</td>
+</tr>     
+<tr>
+  <td>PM, Night Vision Army</td>
+  <td>
+    <ul>
+      <li>Project Leader Night Vision Devices</li>
+      <li>Technical SME for Contract Solicitation Evaluation</li>
+      <li>Military System Specifications creator</li>
+      <li>System requirements documents generator</li>
+      <li>PMP Course Taken</li>
+    </ul>
+  </td>
+  <td>10 years</td>
+</tr>
+ </table>
+</div>
+
+<div id="AgenciesSupported" style="display:none" >
+<table>
+    <tr>
+      <th>Government Agency</th>
+      <th>Program</th>
+    </tr>
+    <tr>
+      <td>Department of Homeland Security</td>
+      <td>US-VISIT SP Site</td>
+    </tr>
+    <tr>
+      <td>US Army DeWitt Health Care Network</td>
+      <td> 
+        <ul>
+          <li>SharePoint Intranet Portal</li>
+        <li>DHCN</li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>U.S. Congress  </td>
+      <td>Congressional Reports automated creation from SQL Server
+        data</td>
+    </tr>
+    <tr>
+      <td>DoD and Joint Staff</td>
+      <td> 
+       <ul>
+          <li>SharePoint DKO/AKO sites</li>
+          <li>Joint Force Projection (JFP) ACTD Program</li>
+          <li>Advanced Communications Military JTRS system</li>
+          <li>JNMS Modeling Application</li>
+          <li>Simulation Engines: OPNET, COMNET III, and NetRule</li>
+       </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Defense Information Systems Agency</td>
+      <td>
+        <ul>
+          <li>Developed NATK (Network Analysis Toolkit - NATK) for
+            the automated network analysis of NIPR/SIPRNET.</li>
+          <li>NextGen Characterization of the Global Information Grid
+            (GIG) at the Theater Level </li>
+        </ul> 
+      </td>
+    </tr>
+    <tr>
+      <td>Department of Army
+      </td>
+      <td> 
+        <ul>
+         <li>Project Leader for PM- Night Vision Systems SATCOM</li>
+         <li>DAMA SATCOM Program</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+<pre id="demo"></pre>
+<div id="myDIV">
+</div>
+<hr>
+
+<p id="your_paragraph">This text will change, after clicking the button.</p>
+Main News: <input type="text" id="theText" />
+<input type="button" id="btn" value="Update" />
+
+<script>
+
+function clearElements() {
+  document.getElementById("summary1").innerHTML="";
+  document.getElementById("AgenciesSupported").style.display = "none";
+}
+function mySummary() {
+  var text = document.getElementById("mySumm").innerHTML;
+  document.getElementById("summary1").innerHTML = text;
+  }
+
+function techSkills() {
+  let text = document.getElementById("techSkills").innerHTML;
+  document.getElementById("summary1").innerHTML = text;
+}
+function mySoftSkills() {
+  var text = document.getElementById("mySoftSkills").innerHTML;
+  document.getElementById("summary1").innerHTML = text;
+  document.getElementById("AgenciesSupported").style.display = "none";
+}
+function myHist() {
+  var text = document.getElementById("myHist").innerHTML;
+  document.getElementById("summary1").innerHTML= text;
+// document.getElementById("AgenciesSupported").style.display = "none";
+}
+function Agencies() {
+  // document.getElementById("summary1").innerHTML="";
+  //document.getElementById("AgenciesSupported").style.display = "block";
+  var x = document.getElementById("AgenciesSupported").innerHTML
+  document.getElementById("summary1").innerHTML= x;
+}
+//Test Function for hide/visible
+function toggle() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  x.textContent="new new text";
+}
+
+var p = document.getElementById('your_paragraph');
+var btn = document.getElementById('btn');
+var txt = document.getElementById('theText');
+btn.onclick = function(){
+   p.textContent = txt.value;
+};
+</script>
 </body>
 </html>
