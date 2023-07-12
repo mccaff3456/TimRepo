@@ -3,8 +3,17 @@
 <head>
 <title>Page Title</title>
 <style>
-    h1 {font-size: 30px;
-    text-align: center;}
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  background-color: #9fd9be;
+  padding: 10px;
+}
+   h1 {font-size: 30px;
+    text-align: center;
+    vertical-align:middle;
+  }
     h2 {font-size: 25px;
     text-align: center;
     }
@@ -39,26 +48,33 @@
 </head>
 
 <body>
-
+  <div class="grid-container">
+    <p></p>
 <h1>Tim McCaffery</h1>
+  <a href=mailto:mccaff3456@gmail.com?subject="Online Resume Response">Contact Tim</a>
+</div>
 <h2 id="h2a">IT Manager /   Project Leader /  Systems Analyst /  Engineer / STEM</h2>
-<div class="button-group"></div>
+<div class="button-group">
 <button onclick="mySummary()">Summary</button>
 <button onclick="techSkills()">Technical Skills</button>
 <button onclick="mySoftSkills()">Soft Skills</button>
 <button onclick="myHist()">Work History</button>
-<button onclick="Agencies()">Agencies Supported</button>
+<!-- <button onclick="Agencies()">Agencies Supported</button>
 <button onclick="toggle()">Toggle</button>
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+-->
 </div>
 
 <div id="summary1"></div>
 <p id="demo"></p>
 
-  <ul hidden id="mySumm">
-    <li> mySumm Technical Project Leader skill set with the knowledge, experience, and competence to provide
+  
+<div hidden id="mySumm">
+  
+  <ul>
+    <li> <b></b>Technical Project Leader</b> skill set with the knowledge, experience, and competence to provide
   excellent value and productivity.</li>
-    <li>Multiple positions performed successfully over the last 20 years include SharePoint
+    <li>20+ years of working in <b>IT and STEM</b> industry including SharePoint
   Architect/Developer, Senior Systems Analyst, IT Engineer, STEM Instructor, Youth Coach,
   Program Manager, Modeling/Simulation Engineer.</li>
     <li>DISA Program of the Year Award for development of a Full Stack Network Analysis Application
@@ -76,8 +92,10 @@
   common systems objectives.</li>
     <li>Volunteer: 30 years youth sports coaching, 10 years volunteering at KEEN (kids with disabilities).</li>
 </ul>
+</div>
 
 <ul hidden id="techSkills">
+  <p> The following is a list of just some of the technical skills that have allowed me to perform at a high level of competence for the 20+ years working in the IT industry</p>
   <li>SharePoint Design / Development</li>
   <li>Agile Methodology Implementation</li>
   <li>Scrum, Kaban, Lean Six Sigma, Agile</li>
@@ -229,14 +247,15 @@
     </tr>
   </table>
 </div>
+
 <pre id="demo"></pre>
 <div id="myDIV">
 </div>
 <hr>
 
-<p id="your_paragraph">This text will change, after clicking the button.</p>
-Main News: <input type="text" id="theText" />
-<input type="button" id="btn" value="Update" />
+<!-- <p id="your_paragraph">This text will change, after clicking the button.</p>
+Main News: <input type="text" id="theText">
+<input type="button" id="btn" value="Update"> -->
 
 <script>
 
