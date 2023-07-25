@@ -5,30 +5,34 @@
 <style>
   .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 30px;
   background-color: #9fd9be;
   padding: 10px;
-}
-   h1 {font-size: 30px;
+  vertical-align:middle;
+    }
+  a {display: inline;
+  font-size: 25px;
+    }
+  h1 {font-size: 30px;
     text-align: center;
     vertical-align:middle;
-  }
-    h2 {font-size: 25px;
+      }
+  h2 {font-size: 25px;
     text-align: center;
     }
-    p {font-size: 14px;}
+  p {font-size: 14px;}
     p#myP {visibility:visible;
       color: red;
     }
-    table, th, td {
+  table, th, td {
   border:1px solid black;
   font-size: 20px;
-}
+    }
 .button-group {
       display:flex;
       margin-left: 200px;
-           
+      grid-gap: 10px;     
     }
 
     button {
@@ -36,33 +40,35 @@
       background-color: greenyellow;
       color:blue;
       font-size: 20px;
-     
     }
   #summary1 {
     width:100%;
     margin-left: 100px;
     padding-top:20px;
     font-size:20px;
-    
-    </style>
+  }
+</style>
 </head>
 
 <body>
   <div class="grid-container">
     <p></p>
 <h1>Tim McCaffery</h1>
-  <a href=mailto:mccaff3456@gmail.com?subject="Online Resume Response">Contact Tim</a>
+<p></p>
+  <a href=mailto:mccaff3456@gmail.com?subject="Online Resume Response">Email Contact</a>
 </div>
 <h2 id="h2a">IT Manager /   Project Leader /  Systems Analyst /  Engineer / STEM</h2>
 <div class="button-group">
+<button onclick="whyHireMe()">Why Hire Me</button>
+
 <button onclick="mySummary()">Summary</button>
 <button onclick="techSkills()">Technical Skills</button>
 <button onclick="mySoftSkills()">Soft Skills</button>
 <button onclick="myHist()">Work History</button>
-<!-- <button onclick="Agencies()">Agencies Supported</button>
-<button onclick="toggle()">Toggle</button>
+<button onclick="Agencies()">Agencies Supported</button>
+<!-- <button onclick="toggle()">Toggle</button> -->
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
--->
+
 </div>
 
 <div id="summary1"></div>
