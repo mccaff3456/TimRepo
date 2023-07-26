@@ -14,40 +14,41 @@
   a {display: inline;
   font-size: 25px;
     }
-  h1 {font-size: 30px;
+  h1 {font-size: 60px;
     text-align: center;
     vertical-align:middle;
       }
-  h2 {font-size: 25px;
+  h2 {font-size: 40px;
     text-align: center;
     }
-  p {font-size: 14px;}
+  p {font-size: 30px;}
     p#myP {visibility:visible;
       color: red;
     }
   table, th, td {
   border:1px solid black;
-  font-size: 20px;
+  font-size: 30px;
     }
 .button-group {
-      display:flex;
-      margin: 0;
-  position: absolute;
+  text-align: center;
+  margin:0 auto;
+   display:block;
+   background-color: #a99fd9;
   left: 50%;
       grid-gap: 10px;     
     }
 
     button {
-      align-items: center;
+      text-align: center;
       background-color: greenyellow;
       color:blue;
-      font-size: 20px;
+      font-size: 40px;
     }
   #summary1 {
     width:100%;
     margin-left: 100px;
     padding-top:20px;
-    font-size:20px;
+    font-size:30px;
   }
 </style>
 </head>
@@ -63,7 +64,6 @@
 
 <div class="button-group">
 <button onclick="whyHireMe()">Why Hire Me</button>
-
 <button onclick="mySummary()">Summary</button>
 <button onclick="techSkills()">Technical Skills</button>
 <button onclick="mySoftSkills()">Soft Skills</button>
