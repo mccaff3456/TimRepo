@@ -23,8 +23,9 @@
     }
   p {font-size: 30px;}
     p#myP {visibility:visible;
-      text-align: center;
-      color: red;
+    text-align: center;
+    margin-left: 20px;
+    color: red;
     }
   table, th, td {
   border:1px solid black;
@@ -79,7 +80,7 @@
 <p id="demo"></p>
 
 <div hidden id="hireMe">
-  <p> am a highly motivated and results-oriented individual with a strong work ethic. I am confident that I have the skills and experience necessary to make a significant contribution to your company. I am a quick learner and I am always eager to take on new challenges. I am also a team player and I am confident that I can work effectively with others to achieve our goals.<br>
+<p> am a highly motivated and results-oriented individual with a strong work ethic. I am confident that I have the skills and experience necessary to make a significant contribution to your company. I am a quick learner and I am always eager to take on new challenges. I am also a team player and I am confident that I can work effectively with others to achieve our goals.<br>
   In my previous role at Acme Corporation, I was responsible for managing a team of sales representatives. I was able to increase sales by 15% year-over-year. I also developed and implemented a new sales strategy that resulted in a significant increase in market share. I am confident that I can use my skills and experience to help your company achieve its goals.<br>
   I am confident that I would be a valuable asset to your company. I am a hard worker and I am always willing to go the extra mile. I am also a team player and I am confident that I can work effectively with others to achieve our goals. I am eager to learn more about your company and I am confident that I can make a significant contribution to your team.  <br>
   I am available for an interview at your earliest convenience. Thank you for your time and consideration.
@@ -283,7 +284,7 @@ function clearElements() {
 }
 function whyHireMe() {
   var text = document.getElementById("hireMe").innerHTML;
-  document.getElementById("demo").innerHTML = text;
+  document.getElementById("summary1").innerHTML = text;
   }
 function mySummary() {
   var text = document.getElementById("mySumm").innerHTML;
